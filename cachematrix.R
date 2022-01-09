@@ -1,5 +1,5 @@
-#This R file contains two functions, makeCacheMatrix() and cacheSolve().
-#Using two functions, we create an inverse matrix from an input. 
+# This R file contains two functions, makeCacheMatrix() and cacheSolve().
+# Using two functions, we create an inverse matrix from an input. 
 
 # makeCacheMatrix() creates an object that can cache its inverse.
 # The object created contains a list of set(), get(), setsolve(),getsolve()

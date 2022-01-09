@@ -1,8 +1,8 @@
 # This R file contains two functions, makeCacheMatrix() and cacheSolve().
-# Using two functions, we create an inverse matrix from an input. 
+# we create an inverse matrix from an input using two functions. 
 
-# makeCacheMatrix() creates an object that can cache its inverse.
-# The object created contains a list of set(), get(), setsolve(),getsolve()
+# makeCacheMatrix() creates an object that can cache input's inverse matrix.
+# The output contains a list of objects, set(), get(), setsolve(),getsolve().
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -18,9 +18,9 @@ makeCacheMatrix <- function(x = matrix()) {
        getsolve = getsolve)  
 }
 
-# cacheSolve() computes the inverse of the matrix returned by this makeCacheMatrix(). 
+# cacheSolve() computes the inverse of the matrix returned by makeCacheMatrix(). 
 # If the inverse has already been calculated or the matrix has not changed, 
-# then the function should retrieve the inverse from the cache, avoiding recalculating
+# then the function should retrieve the inverse from the cache, avoiding recalculating.
 
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
